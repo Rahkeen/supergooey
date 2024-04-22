@@ -1,6 +1,6 @@
 # Supergooey
 
--[ ] Make it deploy
--[ ] Scaffold some UI
--[ ] Setup Database
--[ ] Attach Databse to UI
+- [ ] Make it deploy
+- [ ] Scaffold some UI
+- [ ] Setup Database
+- [ ] Attach Databse to UI
