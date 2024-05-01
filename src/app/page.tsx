@@ -9,7 +9,7 @@ export default function HomePage() {
 
   const size = 44
   return (
-    <main className="flex flex-col min-h-svh max-w-[440px] items-center m-auto text-white gap-8">
+    <main className="flex flex-col min-h-svh max-w-[440px] items-center m-auto text-white gap-16">
       <section className="w-full flex flex-row justify-start items-center gap-2 mt-8">
         <Image className="" src="/sg-icon-white.svg" alt="supergooey icon" width={size} height={size}/>
       </section>
@@ -31,6 +31,10 @@ export default function HomePage() {
           borderRadius: "4px",
         }} />
         <p className="flex-grow text-lg leading-tight text-gray-500"><span className="text-white font-semibold">Hey, I’m Rikin.</span> I run Supergooey, which is a micro-studio (aka just me) that builds fun and whimsical mobile apps and courses.</p>
+      </section>
+      <section className="w-full flex flex-col">
+        <h2 className="text-lg font-bold">/misc</h2>
+        <p className="text-gray-500">Other things I’m up to</p>
       </section>
     </main>
   );
