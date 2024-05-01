@@ -1,29 +1,26 @@
 import Image from "next/image";
-import { Unbounded} from "next/font/google";
+import {Unbounded} from "next/font/google";
 
 const unbounded = Unbounded({
-   subsets: ["latin"],
+  subsets: ["latin"],
 })
 
 export default function HomePage() {
   const size = 44
   return (
-    <main className="flex flex-col max-w-[800px] items-center m-auto text-black">
-      <section className="w-full flex flex-row justify-center items-center gap-2 mt-8">
-        <Image src="/sg-icon.svg" alt="supergooey icon" width={size} height={size}/>
+    <main className="flex flex-col max-w-[440px] items-center m-auto text-white gap-8">
+      <section className="w-full flex flex-row justify-start items-center gap-2 mt-8">
+        <Image className="" src="/sg-icon-white.svg" alt="supergooey icon" width={size} height={size}/>
       </section>
-      <section className="w-full flex flex-col p-16 gap-12">
-        <h1 className="font-medium text-6xl text-center">Android apps that look and feel <span
-          className={"font-bold"}>Magical</span></h1>
-        <p className="text-center text-xl">Tired of hearing <em>"Android when???"</em><br/>  Let's work together!</p>
+      <section className="w-full flex flex-col gap-4">
+        <h1 className="w-full text-left text-3xl">Building Android apps that look and feel <strong>Magical</strong></h1>
+        <p className="w-full text-left text-lg text-gray-500 font-normal">Tired of hearing <em>“Android app when???”</em> Let’s create a
+          visually stunning Android experience together at a <span className="text-white font-semibold">fraction</span> of the cost of a full-time developer.</p>
+        <div className="flex flex-row gap-3 items-center">
+          <a className="no-underline bg-white rounded text-black font-medium p-2 pl-4 pr-4" href="">Let's build</a>
+          <a href="">Schedule a call</a>
+        </div>
       </section>
     </main>
   );
-}
-
-// interesting way to just add a lil spacer
-function Spacer() {
-  return (
-    <div className="h-10"/>
-  )
 }
