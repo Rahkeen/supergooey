@@ -6,9 +6,10 @@ const unbounded = Unbounded({
 })
 
 export default function HomePage() {
+
   const size = 44
   return (
-    <main className="flex flex-col max-w-[440px] items-center m-auto text-white gap-8">
+    <main className="flex flex-col min-h-svh max-w-[440px] items-center m-auto text-white gap-8">
       <section className="w-full flex flex-row justify-start items-center gap-2 mt-8">
         <Image className="" src="/sg-icon-white.svg" alt="supergooey icon" width={size} height={size}/>
       </section>
@@ -21,7 +22,15 @@ export default function HomePage() {
           <a href="">Schedule a call</a>
         </div>
       </section>
-      <div className="w-3/4 m-auto block border-[1px] border-white" />
+      <div className="w-3/4 ml-auto mr-auto block border-[1px] border-white" />
+      <section className="w-full flex flex-row">
+        <Image src="/profile-pic.jpg" alt="a handsome fellow" width={60} height={60} style={{
+          width: "60px",
+          height: "60px",
+          objectFit: "cover",
+          borderRadius: "4px",
+        }} />
+      </section>
     </main>
   );
 }
