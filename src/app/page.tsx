@@ -18,18 +18,19 @@ export default function HomePage() {
         <p className="w-full text-left text-lg text-gray-500 font-normal leading-tight">Tired of hearing <em>“Android app when???”</em> Let’s create a
           visually stunning Android experience together at a <span className="text-white font-semibold">fraction</span> of the cost of a full-time developer.</p>
         <div className="flex flex-row gap-3 items-center">
-          <a className="no-underline bg-white rounded text-black font-medium p-2 pl-4 pr-4" href="">Let&apos;s build</a>
+          <a className="no-underline bg-white rounded text-black font-medium p-2 pl-4 pr-4" href="">Let’s build</a>
           <a href="">Schedule a call</a>
         </div>
       </section>
       <div className="w-3/4 ml-auto mr-auto block border-[1px] border-white" />
-      <section className="w-full flex flex-row">
+      <section className="w-full flex flex-row gap-4 items-center">
         <Image src="/profile-pic.jpg" alt="a handsome fellow" width={60} height={60} style={{
           width: "60px",
           height: "60px",
           objectFit: "cover",
           borderRadius: "4px",
         }} />
+        <p className="flex-grow text-lg leading-tight text-gray-500"><span className="text-white font-semibold">Hey, I’m Rikin.</span> I run Supergooey, which is a micro-studio (aka just me) that builds fun and whimsical mobile apps and courses.</p>
       </section>
     </main>
   );
