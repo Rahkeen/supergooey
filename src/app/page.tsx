@@ -56,27 +56,30 @@ export default function HomePage() {
           borderRadius: "4px",
         }}/>
         <p className="flex-grow text-lg leading-tight text-gray-500"><span className="text-white font-semibold">Hey, I’m Rikin.</span> I
-          run Supergooey, which is a micro-studio (aka just me) that builds fun and whimsical mobile apps and courses.
+          run Supergooey, which is a <em>micro-studio</em> (aka just me) that builds fun and whimsical mobile apps and courses.
         </p>
       </section>
       <section className="w-full grid grid-cols-2 gap-1">
         <h2 className="text-lg font-bold col-span-2">/projects</h2>
+        <p className="text-gray-500 col-span-2 mb-2">Things I’ve built or worked on</p>
         {
           projects.map((project) => (
             <div key={project.id} className="h-[118px] flex flex-row bg-gray-900 rounded-xl">
               <p className="flex-grow self-end m-2">{project.title}</p>
               <div className="flex-grow h-full overflow-hidden">
-                <img src={project.url} alt={project.title} className={`w-[112px] h-[212px] relative left-1/4 top-1/4 bg-black border-2 border-black rounded-xl rotate-[6deg]`}></img>
+                <img src={project.url} alt={project.title} className={
+                  `w-[112px] h-[212px] relative left-1/4 top-1/4 bg-black border-2 border-black rounded-xl rotate-[6deg]`
+                }/>
               </div>
             </div>
           ))
         }
       </section>
-      <section className="w-full flex flex-col">
+      <section className="w-full flex flex-col mb-10">
         <h2 className="text-lg font-bold">/misc</h2>
         <p className="text-gray-500">Other things I’m up to</p>
-        <a href="" className="text-white no-underline mt-2">Shader Course</a>
-        <a href="" className="text-white no-underline">Youtube</a>
+        <a href="https://shadercourse.framer.website" className="text-white mt-2">Shader Course</a>
+        <a href="https://www.youtube.com/@rikinmarfatia" className="text-white">Youtube</a>
       </section>
     </main>
   );
