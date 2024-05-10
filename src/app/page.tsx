@@ -32,9 +32,17 @@ export default function HomePage() {
         }} />
         <p className="flex-grow text-lg leading-tight text-gray-500"><span className="text-white font-semibold">Hey, I’m Rikin.</span> I run Supergooey, which is a micro-studio (aka just me) that builds fun and whimsical mobile apps and courses.</p>
       </section>
+      <section className="w-full grid grid-cols-2 gap-1">
+        <div className="h-[118px] bg-blue-300"></div>
+        <div className="h-[118px] bg-blue-300"></div>
+        <div className="h-[118px] bg-blue-300"></div>
+        <div className="h-[118px] bg-blue-300"></div>
+      </section>
       <section className="w-full flex flex-col">
         <h2 className="text-lg font-bold">/misc</h2>
         <p className="text-gray-500">Other things I’m up to</p>
+        <a href="" className="text-white no-underline mt-2">Shader Course</a>
+        <a href="" className="text-white no-underline">Youtube</a>
       </section>
     </main>
   );
