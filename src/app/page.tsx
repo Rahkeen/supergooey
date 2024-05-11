@@ -66,7 +66,7 @@ export default function HomePage() {
             className="text-white font-semibold">fraction</span> of the cost of a full-time developer.</p>
         <div className="flex flex-row gap-3 items-center">
           <a className="no-underline bg-white rounded text-black font-medium p-2 pl-4 pr-4" href="">Let’s build</a>
-          <a href="" className="underline">Schedule a call</a>
+          <a href="https://cal.com/supergooey/project?user=supergooey" className="underline">Schedule a call</a>
         </div>
       </section>
       <div className="w-3/4 ml-auto mr-auto block border-[1px] border-white"/>
