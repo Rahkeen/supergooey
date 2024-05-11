@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {Unbounded} from "next/font/google";
 
 const unbounded = Unbounded({
@@ -57,7 +56,7 @@ export default function HomePage() {
   return (
     <main className="flex flex-col min-h-svh max-w-[440px] items-center m-auto text-white gap-16 p-2">
       <section className="w-full flex flex-row justify-start items-center gap-2 mt-8">
-        <Image className="" src="/sg-icon-white.svg" alt="supergooey icon" width={size} height={size}/>
+        <img className="" src="/sg-icon-white.svg" alt="supergooey icon" width={size} height={size}/>
       </section>
       <section className="w-full flex flex-col gap-4">
         <h1 className="w-full text-left text-3xl">Building Android apps that look and feel <strong>Magical</strong></h1>
@@ -72,12 +71,9 @@ export default function HomePage() {
       </section>
       <div className="w-3/4 ml-auto mr-auto block border-[1px] border-white"/>
       <section className="w-full flex flex-row gap-4 items-center">
-        <Image src="/profile-pic.jpg" alt="a handsome fellow" width={60} height={60} style={{
-          width: "60px",
-          height: "60px",
-          objectFit: "cover",
-          borderRadius: "4px",
-        }}/>
+        <img src="/profile-pic.jpg" alt="a handsome fellow" width={120} height={120} className={
+          "w-[80px] rounded"
+        } />
         <p className="flex-grow text-lg leading-tight text-gray-500"><span className="text-white font-semibold">Hey, I’m Rikin.</span> I
           run Supergooey, which is a <em>micro-studio</em> (aka just me) that builds fun and whimsical mobile apps and
           courses.
