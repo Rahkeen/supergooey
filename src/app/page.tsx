@@ -28,11 +28,34 @@ const projects = [
   },
 ]
 
+const experiments = [
+  {
+    id: 1,
+    title: "Juxtaposed",
+    url: "https://utfs.io/f/a05d0114-fa5d-4fe2-9881-c4d9b947cdc4-hltdh5.mp4"
+  },
+  {
+    id: 2,
+    title: "Frosted Glass",
+    url: "https://utfs.io/f/03f2b14b-413a-4401-aba9-e9323a0fe072-272o0v.mp4"
+  },
+  {
+    id: 3,
+    title: "Path Gradient",
+    url: "https://utfs.io/f/2f8dbebf-41cc-47e4-a9c7-3050ca42c2f4-wkd5y6.mp4"
+  },
+  {
+    id: 4,
+    title: "Arcdroid",
+    url: "https://utfs.io/f/6c86a86c-fb98-41e7-8e37-786ed58b921a-sfw0ba.mp4"
+  },
+]
+
 export default function HomePage() {
 
   const size = 44
   return (
-    <main className="flex flex-col min-h-svh max-w-[440px] items-center m-auto text-white gap-16">
+    <main className="flex flex-col min-h-svh max-w-[440px] items-center m-auto text-white gap-16 p-2">
       <section className="w-full flex flex-row justify-start items-center gap-2 mt-8">
         <Image className="" src="/sg-icon-white.svg" alt="supergooey icon" width={size} height={size}/>
       </section>
@@ -44,7 +67,7 @@ export default function HomePage() {
             className="text-white font-semibold">fraction</span> of the cost of a full-time developer.</p>
         <div className="flex flex-row gap-3 items-center">
           <a className="no-underline bg-white rounded text-black font-medium p-2 pl-4 pr-4" href="">Let’s build</a>
-          <a href="">Schedule a call</a>
+          <a href="" className="underline">Schedule a call</a>
         </div>
       </section>
       <div className="w-3/4 ml-auto mr-auto block border-[1px] border-white"/>
@@ -56,7 +79,8 @@ export default function HomePage() {
           borderRadius: "4px",
         }}/>
         <p className="flex-grow text-lg leading-tight text-gray-500"><span className="text-white font-semibold">Hey, I’m Rikin.</span> I
-          run Supergooey, which is a <em>micro-studio</em> (aka just me) that builds fun and whimsical mobile apps and courses.
+          run Supergooey, which is a <em>micro-studio</em> (aka just me) that builds fun and whimsical mobile apps and
+          courses.
         </p>
       </section>
       <section className="w-full grid grid-cols-2 gap-1">
@@ -75,11 +99,20 @@ export default function HomePage() {
           ))
         }
       </section>
+      <section className="w-full grid grid-cols-2 gap-1">
+        <h2 className="text-lg font-bold col-span-2">/playground</h2>
+        <p className="text-gray-500 col-span-2 mb-2">Ideas I’m playing with</p>
+        {
+          experiments.map((experiment) => (
+            <video key={experiment.id} src={experiment.url} className="rounded-xl" autoPlay loop muted />
+          ))
+        }
+      </section>
       <section className="w-full flex flex-col mb-10">
         <h2 className="text-lg font-bold">/misc</h2>
         <p className="text-gray-500">Other things I’m up to</p>
-        <a href="https://shadercourse.framer.website" className="text-white mt-2">Shader Course</a>
-        <a href="https://www.youtube.com/@rikinmarfatia" className="text-white">Youtube</a>
+        <a href="https://shadercourse.framer.website" className="text-white underline mt-2">Shader Course</a>
+        <a href="https://www.youtube.com/@rikinmarfatia" className="text-white underline">Youtube</a>
       </section>
     </main>
   );
