@@ -65,7 +65,7 @@ export default function HomePage() {
           visually stunning Android experience together at a <span
             className="text-white font-semibold">fraction</span> of the cost of a full-time developer.</p>
         <div className="flex flex-row gap-3 items-center">
-          <a className="no-underline bg-white rounded text-black font-medium p-2 pl-4 pr-4" href="">Let’s build</a>
+          <a className="no-underline bg-white rounded text-black font-medium p-2 pl-4 pr-4" href="https://tally.so/r/w8dyXO">Let’s build</a>
           <a href="https://cal.com/supergooey/project?user=supergooey" className="underline">Schedule a call</a>
         </div>
       </section>
